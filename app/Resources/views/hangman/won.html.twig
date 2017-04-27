@@ -1,0 +1,13 @@
+{% extends "hangman/base/base.html.twig" %}
+{% block title %}Hangman Game - You won!{% endblock %}
+
+{% import "hangman/macros/breadcrumb.html.twig" as mamacro %}
+
+{% block content %}
+    {{ mamacro.breadcrumb({'home' : 'Homepage', 'game' : 'Game', 'won' : 'Won'}) }}
+    <h2>Congratulations!</h2>
+
+    <p>
+        You found the word <strong>software</strong> and won this game.
+    </p>
+{% endblock %}
