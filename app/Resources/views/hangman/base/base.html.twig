@@ -17,16 +17,32 @@
         <div id="menu">
             <ul>
                 <li class="first current_page_item">
-                    <a href="{{ path('game') }}">Game</a>
+                    <a href="{{ path('game') }}">
+                        {% trans from 'menu' %}
+                            menu.game
+                        {% endtrans %}
+                    </a>
                 </li>
                 <li>
-                    <a href="/signup">Register</a>
+                    <a href="/signup">
+                        {% trans from 'menu' %}
+                        menu.register
+                        {% endtrans %}
+                    </a>
                 </li>
                 <li>
-                    <a href="/signin">Login</a>
+                    <a href="/signin">
+                        {% trans from 'menu' %}
+                        menu.login
+                        {% endtrans %}
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#">
+                        {% trans from 'menu' %}
+                        menu.contact
+                        {% endtrans %}
+                    </a>
                 </li>
             </ul>
             <br class="clearfix" />
